@@ -1,0 +1,475 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<title>Dreams LMS</title>
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+		
+		<!-- Feather CSS -->
+		<link rel="stylesheet" href="assets/css/feather.css">
+
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+	
+	</head>
+	<body>
+
+		<div class="main-wrapper">
+		
+			<!-- Header -->
+			<header class="header header-page">
+				<div class="header-fixed">
+					<nav class="navbar navbar-expand-lg header-nav scroll-sticky">
+						<div class="container ">
+							<div class="navbar-header">
+								<a id="mobile_btn" href="javascript:void(0);">
+									<span class="bar-icon">
+										<span></span>
+										<span></span>
+										<span></span>
+									</span>
+								</a>
+								<a href="index.html" class="navbar-brand logo">
+									<img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
+								</a>
+							</div>
+							<div class="main-menu-wrapper">
+								<div class="menu-header">
+									<a href="index.html" class="menu-logo">
+										<img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
+									</a>
+									<a id="menu_close" class="menu-close" href="javascript:void(0);">
+										<i class="fas fa-times"></i>
+									</a>
+								</div>
+								<ul class="main-nav">
+									<li class="has-submenu">
+										<a class="active" href="#" style="font-size: 22px;">Admin Dashboard </a>
+										
+									</li>
+									
+									<li class="login-link">
+										<a href="login.html">Login / Signup</a>
+									</li>
+								</ul>		 
+							</div>		 
+							<ul class="nav header-navbar-rht">
+								
+								
+								<li class="nav-item user-nav">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span class="user-img">
+											<img src="assets/img/instructor/profile-avatar.jpg" alt="">
+											<span class="status online"></span>
+										</span>
+									</a>
+									<div class="users dropdown-menu dropdown-menu-right" data-popper-placement="bottom-end" >
+										<div class="user-header">
+											<div class="avatar avatar-sm">
+												<img src="assets/img/instructor/profile-avatar.jpg" alt="User Image" class="avatar-img rounded-circle">
+											</div>
+											<div class="user-text">
+												<h6>Musab</h6>
+												<p class="text-muted mb-0">Admin</p>
+											</div>
+										</div>
+										<a class="dropdown-item" href="admin-dashboard.html"><i class="feather-home me-1"></i> Dashboard</a>
+										<a class="dropdown-item" href="admin-edit-profile.html"><i class="feather-star me-1"></i> Edit Profile</a>
+										<div class="dropdown-item night-mode">
+											<span><i class="feather-moon me-1"></i> Night Mode </span>
+											<div class="form-check form-switch check-on m-0">
+												<input class="form-check-input" type="checkbox" id="night-mode">
+											</div>
+										</div>
+										<a class="dropdown-item" href="index.html"><i class="feather-log-out me-1"></i> Logout</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<!-- /Header -->
+			
+			<!-- Page Wrapper -->
+			<div class="page-content instructor-page-content">
+				<div class="container">
+					<div class="row">
+						
+						<!-- Sidebar -->
+						<div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
+							<div class="settings-widget dash-profile">
+								<div class="settings-menu p-0">
+									<div class="profile-bg">
+										
+										<img src="assets/img/instructor-profile-bg.jpg" alt="">
+										<div class="profile-img">
+											<a href="#"><img src="assets/img/user/user15.jpg" alt=""></a>
+										</div>
+									</div>
+									<div class="profile-group">
+										<div class="profile-name text-center">
+											<h4><a href="#">Musab</a></h4>
+											<p>Admin</p>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="settings-widget account-settings">
+								<div class="settings-menu">
+									<h3>DASHBOARD</h3>
+									<ul>
+										<li class="nav-item ">
+											<a href="admin-dashboard.html" class="nav-link">
+												<i class="feather-home"></i> Admin Dashboard
+											</a>
+										</li>
+										<li class="nav-item ">
+											<a href="admin-approval-grid.html" class="nav-link">
+												<i class="feather-book"></i> Approvals
+											</a>
+										</li>
+										<li class="nav-item ">
+											<a href="admin-course.html" class="nav-link">
+												<i class="feather-book"></i> Courses
+											</a>
+										</li>
+										<li class="nav-item ">
+											<a href="admin-reviews.html" class="nav-link">
+												<i class="feather-star"></i> Reviews
+											</a>
+										</li>
+										<li class="nav-item active">
+											<a href="admin-earnings.html" class="nav-link">
+												<i class="feather-pie-chart"></i> Earnings
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="admin-orders.html" class="nav-link">
+												<i class="feather-shopping-bag"></i> Purchases
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="admin-student-grid.html" class="nav-link">
+												<i class="feather-users"></i> Students
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="admin-instructor-grid.html" class="nav-link">
+												<i class="feather-users"></i> Instructors
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="admin-payouts.html" class="nav-link">
+												<i class="feather-dollar-sign"></i> Payouts
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="admin-tickets.html" class="nav-link">
+												<i class="feather-server"></i> Support Tickets
+											</a>
+										</li>
+									</ul>
+									<div class="instructor-title">
+										<h3>ACCOUNT SETTINGS</h3>
+									</div>
+									<ul>
+										<li class="nav-item">
+											<a href="admin-edit-profile.html" class="nav-link ">
+												<i class="feather-settings"></i> Edit Profile
+											</a>
+										</li>
+									
+										
+										<li class="nav-item">
+											<a href="index.html" class="nav-link">
+												<i class="feather-power"></i> Sign Out
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>					
+						</div>
+						
+						<!-- Instructor Dashboard -->
+						<div class="col-xl-9 col-lg-8 col-md-12">	
+							<div class="row">
+								<div class="col-md-3 d-flex">
+									<div class="card instructor-card w-100">
+										<div class="card-body">
+											<div class="instructor-inner">
+												<h6>REVENUE</h6>
+												<h4 class="instructor-text-success">$1467.34</h4>
+												<p>Earning this month</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 d-flex">
+									<div class="card instructor-card w-100">
+										<div class="card-body">
+											<div class="instructor-inner">
+												<h6>STUDENTS ENROLLMENTS</h6>
+												<h4 class="instructor-text-info">23,167</h4>
+												<p>New this month</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 d-flex">
+									<div class="card instructor-card w-100">
+										<div class="card-body">
+											<div class="instructor-inner">
+												<h6>TOTAL INSTRUCTORS</h6>
+												<h4 class="instructor-text-info">4,052</h4>
+												<p>New this month</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 d-flex">
+									<div class="card instructor-card w-100">
+										<div class="card-body">
+											<div class="instructor-inner">
+												<h6>COURSES RATING</h6>
+												<h4 class="instructor-text-warning">4.90</h4>
+												<p>Rating this month</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card instructor-card">
+										<div class="card-header">
+											<h4>Earnings</h4>
+										</div>
+										<div class="card-body">
+											<div id="instructor_chart"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-12">
+									<div class="settings-widget">
+										<div class="settings-inner-blk p-0">
+											<div class="sell-course-head comman-space">
+												<h3>Best Selling Courses</h3>
+											</div>
+											<div class="comman-space pb-0">
+												<div class="settings-tickets-blk course-instruct-blk table-responsive">
+
+													<!-- Referred Users-->
+													<table class="table table-nowrap">
+														<thead>
+														  <tr>
+															<th>COURSES</th>
+															<th>SALES</th>
+															<th>AMOUNT</th>
+														  </tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<div class="sell-table-group d-flex align-items-center">
+																		<div class="sell-group-img">
+																			<a href="course-details.html">
+																				<img src="assets/img/course/course-10.jpg" class="img-fluid " alt="">
+																			</a>
+																		</div>
+																		<div class="sell-tabel-info">
+																			<p><a href="course-details.html">Information About UI/UX  Design Degree</a></p>
+																		</div>
+																	</div>
+																</td>
+																<td>34</td>
+																<td>$3,145.23</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="sell-table-group d-flex align-items-center">
+																		<div class="sell-group-img">
+																			<a href="course-details.html">
+																				<img src="assets/img/course/course-11.jpg" class="img-fluid " alt="">
+																			</a>
+																		</div>
+																		<div class="sell-tabel-info">
+																			<p><a href="course-details.html">Wordpress for Beginners - Master Wordpress Quickly</a></p>
+																		</div>
+																	</div>
+																</td>
+																<td>34</td>
+																<td>$3,145.23</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="sell-table-group d-flex align-items-center">
+																		<div class="sell-group-img">
+																			<a href="course-details.html">
+																				<img src="assets/img/course/course-12.jpg" class="img-fluid " alt="">
+																			</a>
+																		</div>
+																		<div class="sell-tabel-info">
+																			<p><a href="course-details.html">Sketch from A to Z (2022): Become an app designer</a></p>
+																		</div>
+																	</div>
+																</td>
+																<td>34</td>
+																<td>$3,145.23</td>
+															</tr>
+														</tbody>
+													  </table>
+													<!-- /Referred Users-->	
+
+												</div>									
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<!-- /Instructor Dashboard -->
+						
+					</div>
+				</div>
+			</div>	
+			<!-- /Page Wrapper -->
+			
+			<!-- Footer -->
+			<footer class="footer">
+				
+				<!-- Footer Top -->
+				<div class="footer-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+							
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-about">
+									<div class="footer-logo">
+										<img src="assets/img/logo.svg" alt="logo">
+									</div>
+									<div class="footer-about-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat mauris Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat mauris</p>
+<a href="admin-dashboard.html">Admin Dashboard</a>
+									</div>
+								</div>
+								<!-- /Footer Widget -->
+								
+							</div>
+							
+							<div class="col-lg-2 col-md-6">
+							
+								
+							</div>
+							
+							<div class="col-lg-2 col-md-6">
+							
+							
+							</div>
+							
+							<div class="col-lg-4 col-md-6">
+							
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-contact">
+									<h2 class="footer-title">News letter</h2>
+									<div class="news-letter">
+										<form>
+											<input type="text" class="form-control" placeholder="Enter your email address" name="email">
+										</form>
+									</div>
+									<div class="footer-contact-info">
+										<div class="footer-address">
+											<img src="assets/img/icon/icon-20.svg" alt="" class="img-fluid">
+											<p> NED University, University Road,<br> Karachi, Pakistan </p>
+										</div>
+										<p>
+											<img src="assets/img/icon/icon-19.svg" alt="" class="img-fluid">
+											dreamslms@gmail.com
+										</p>
+										<p class="mb-0">
+											<img src="assets/img/icon/icon-21.svg" alt="" class="img-fluid">
+											+92 323-456-7890
+										</p>
+									</div>
+								</div>
+								<!-- /Footer Widget -->
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- /Footer Top -->
+				
+				<!-- Footer Bottom -->
+				<div class="footer-bottom">
+					<div class="container">
+					
+						<!-- Copyright -->
+						<div class="copyright">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="privacy-policy">
+										<ul>
+											<li><a href="term-condition.html">Terms</a></li>
+											<li><a href="privacy-policy.html">Privacy</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="copyright-text">
+										<p class="mb-0">&copy; 2024 DreamsLMS. All rights reserved.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Copyright -->
+						
+					</div>
+				</div>
+				<!-- /Footer Bottom -->
+				
+			</footer>
+			<!-- /Footer -->
+		   
+		</div>
+	   	<!-- /Main Wrapper -->   
+	  
+		<!-- jQuery -->
+		<script src="assets/js/jquery-3.7.1.min.js"></script>
+
+		<!-- Bootstrap Core JS -->
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Feature JS -->
+		<script src="assets/plugins/feather/feather.min.js"></script>
+
+		<!-- Sticky Sidebar JS -->
+        <script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+        <script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+		
+		<!-- Chart JS -->
+		<script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+		<script src="assets/plugins/apexchart/chart-data.js"></script>
+
+		<!-- Custom JS -->
+		<script src="assets/js/script.js"></script>
+		
+	</body>
+</html>
