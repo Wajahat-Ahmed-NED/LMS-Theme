@@ -4,7 +4,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-		<title>Dreams LMS</title>
+		<title>GetMyTrainer</title>
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
@@ -42,7 +42,7 @@
 								<img src="assets/img/login-img.png" class="img-fluid" alt="Logo">
 							</div>
 							<div class="mentor-course text-center">
-								<h2>Welcome to <br>DreamsLMS Courses.</h2>
+								<h2>Welcome to <br>GetMyTrainer Courses.</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 							</div>
 						</div>
@@ -51,7 +51,7 @@
 								<img src="assets/img/login-img.png" class="img-fluid" alt="Logo">
 							</div>
 							<div class="mentor-course text-center">
-								<h2>Welcome to <br>DreamsLMS Courses.</h2>
+								<h2>Welcome to <br>GetMyTrainer Courses.</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 							</div>
 						</div>
@@ -60,7 +60,7 @@
 								<img src="assets/img/login-img.png" class="img-fluid" alt="Logo">
 							</div>
 							<div class="mentor-course text-center">
-								<h2>Welcome to <br>DreamsLMS Courses.</h2>
+								<h2>Welcome to <br>GetMyTrainer Courses.</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 							</div>
 						</div>
@@ -75,21 +75,21 @@
 						<div class="loginbox">
 							<div class="w-100">
 								<div class="img-logo">
-									<img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
+									<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
 									<div class="back-home">
 										<a href="index.html">Back to Home</a>
 									</div>
 								</div>
 								<h1>Sign into Your Account</h1>
-								<form action="instructor-dashboard.html">
+								<form   id="myForm" onsubmit="signin()" >
 									<div class="input-block">
-										<label class="form-control-label">Email</label>
-										<input type="email" class="form-control" placeholder="Enter your email address">
+										<label class="form-control-label" >Email</label>
+										<input type="email" class="form-control"id="email" placeholder="Enter your email address">
 									</div>
 									<div class="input-block">
-										<label class="form-control-label">Password</label>
+										<label class="form-control-label" >Password</label>
 										<div class="pass-group">
-											<input type="password" class="form-control pass-input" placeholder="Enter your password">
+											<input type="password" class="form-control pass-input" id="password" placeholder="Enter your password">
 											<span class="feather-eye toggle-password"></span>
 										</div>
 									</div>
@@ -103,7 +103,7 @@
 										</label>
 									</div>
 									<div class="d-grid">
-										<button class="btn btn-primary btn-start" type="submit">Sign In</button>
+										<button class="btn btn-primary btn-start" type="submit" onclick="signin()">Sign In</button>
 									</div>
 								</form>
 							</div>
@@ -141,4 +141,27 @@
 		<script src="assets/js/script.js"></script>
 		
 	</body>
+	<script>
+		function signin(){
+
+			let email=document.getElementById("email")
+			let password=document.getElementById("password")
+			let form=document.getElementById("myForm")
+			
+			console.log(email.value)
+			console.log(password.value)
+			if(email.value==='trainer@gmail.com' && password.value==='123'){
+				form.action='instructor-dashboard.html'
+				localStorage.setItem("role","trainer")
+			}	
+			else if(email.value==='trainee@gmail.com' && password.value==='123'){
+				form.action='student-profile.html'
+				localStorage.setItem("role","trainee")
+			}
+			else if(email.value==='admin@gmail.com' && password.value==='123'){
+				form.action='admin-dashboard.html'
+				localStorage.setItem("role","admin")
+			}
+		}
+	</script>
 </html>
